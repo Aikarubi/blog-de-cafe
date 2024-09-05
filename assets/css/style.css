@@ -1,6 +1,6 @@
 :root {
-    --fuenteHeading: 'PT Sans', sans-serif;
-    --fuenteParrafos: 'Open Sans', sans-serif;
+    --fuenteHeading: 'Poppins', sans-serif;
+    --fuenteParrafos: 'Poppins', sans-serif;
 
     --primario: #784D3C;
     --blanco: #ffffff;
@@ -50,7 +50,7 @@ img { max-width: 100%; }
 
 /* Header */
 .header {
-    background-image: url(/assets/img/banner.jpg);
+    background-image: url(/assets/img/banner.png);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ img { max-width: 100%; }
 @media (min-width: 768px) { 
     .barra {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
 }
@@ -95,7 +95,5 @@ img { max-width: 100%; }
     text-align: center;
     color: var(--blanco);
     font-size: 1.8rem;
-    margin-top: 2rem;
-    padding: 1rem
 }
 
