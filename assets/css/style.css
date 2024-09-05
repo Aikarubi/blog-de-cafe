@@ -47,3 +47,18 @@ img { max-width: 100%; }
 .no-padding { padding: 0; }
 
 .centrar-texto { text-align: center; }
+
+/* Header */
+.header {
+    background-image: url(/assets/img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Centrar horizontalmente y verticalmente */
+}
+
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
