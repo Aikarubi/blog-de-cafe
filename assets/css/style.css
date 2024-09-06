@@ -3,6 +3,7 @@
     --fuenteParrafos: 'Poppins', sans-serif;
 
     --primario: #784D3C;
+    --primarioHover: #633a33;
     --gris: #e1e1e1;
     --blanco: #fff;
     --blancoHover: #efeff0;
@@ -152,6 +153,11 @@ img { max-width: 100%; }
 
 .boton--secundario {
     background-color: var(--primario);
+}
+
+.boton--secundario:hover {
+    cursor: pointer;
+    background-color: var(--primarioHover);
 }
 
 .cursos {
