@@ -35,13 +35,13 @@ a { text-decoration: none; }
 
 h1, h2, h3, h4 { font-family: var(--fuenteHeading); line-height: 1.2;}
 
-h1 { font-size: 4.8rem; }
+h1 { font-size: 4.2rem; }
 
-h2 { font-size: 4rem; }
+h2 { font-size: 3.8rem; }
 
 h3 { font-size: 3.2rem; }
 
-h4 { font-size: 2.8rem; }
+h4 { font-size: 2.5rem; }
 
 img { max-width: 100%; }
 
@@ -78,6 +78,7 @@ img { max-width: 100%; }
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        padding-top: 3rem;
     }
 }
 
@@ -153,6 +154,7 @@ img { max-width: 100%; }
 
 .boton--secundario {
     background-color: var(--primario);
+    transition: ease 0.5s;
 }
 
 .boton--secundario:hover {
@@ -188,3 +190,8 @@ img { max-width: 100%; }
     font-size: 2rem;
 }
 
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
