@@ -195,3 +195,32 @@ img { max-width: 100%; }
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
+
+
+/* Sobre nosotros */
+
+@media (min-width: 768px) { 
+    .sobre-nosotros {
+        display: flex;
+        gap: 2rem;
+        /*justify-content: space-between; */ /*Para los navegadores que no soportan el gap*/
+    }
+
+    .sobre-nosotros__imagen, 
+    .sobre-nosotros__texto {
+        flex-basis: 50%;
+        /*flex-basis: calc(50% - 1rem);*/ /*Para los navegadores que no soportan el gap*/
+    }
+
+    .sobre-nosotros__texto p {
+        margin-top: 0;
+    }
+
+/*  Es lo mismo que lo de arriba pero con grid
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+*/
+}
