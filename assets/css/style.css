@@ -258,3 +258,12 @@ img { max-width: 100%; }
 .curso__info {
     font-size: 2rem;
 }
+
+/* Contacto */
+
+.contacto-bg {
+    background-image: url(/assets/img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
