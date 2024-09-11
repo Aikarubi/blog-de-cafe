@@ -264,11 +264,11 @@ img { max-width: 100%; }
 
 /* Contacto */
 .webp .contacto-bg {
-    background-image: url(/assets/img/contacto2.webp);
+    background-image: url(/assets/img/contacto.webp);
 }
 
 .no-webp .contacto-bg {
-    background-image: url(/assets/img/contacto2.jpg);
+    background-image: url(/assets/img/contacto.jpg);
 }
 
 .contacto-bg {
