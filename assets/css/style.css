@@ -53,8 +53,11 @@ img { max-width: 100%; }
 .centrar-texto { text-align: center; }
 
 /* Header */
+.webp .header { background-image: url(/assets/img/banner.webp); }
+
+.no-webp .header { background-image: url(/assets/img/banner.jpg); }
+
 .header {
-    background-image: url(/assets/img/banner.png);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -261,11 +264,11 @@ img { max-width: 100%; }
 
 /* Contacto */
 .webp .contacto-bg {
-    background-image: url(/assets/img/contacto.webp);
+    background-image: url(/assets/img/contacto2.webp);
 }
 
 .no-webp .contacto-bg {
-    background-image: url(/assets/img/contacto.jpg);
+    background-image: url(/assets/img/contacto2.jpg);
 }
 
 .contacto-bg {
