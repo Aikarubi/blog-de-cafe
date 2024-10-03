@@ -75,3 +75,18 @@ console.log(5);
 /*window.onscroll = function() {
     console.log('scrolling...');
 }*/
+
+//Selecionar elementos y asociarles un evento
+
+const btnEnviar = document.querySelector('.boton--primario');
+
+btnEnviar.addEventListener('click', function(event) {
+    console.log(event);
+    event.preventDefault(); //Prevenimos la accion de este caso enviar el formulario
+
+    //Validar un formulario
+
+
+    
+    console.log('enviado formulario');
+});
