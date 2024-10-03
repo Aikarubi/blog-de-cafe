@@ -48,12 +48,13 @@ navegacion.appendChild(nuevoEnlace);
 
 //console.log(nuevoEnlace);
 
+
 //Eventos
 
-console.log(1);
+//console.log(1);
 
 window.addEventListener('load', function () { //load espera a que el JS y los archivos que dependen del HTML estén listos
-    console.log(2);
+    //console.log(2);
 });
 
 //window.addEventListener('load', imprimir);
@@ -63,14 +64,14 @@ window.addEventListener('load', function () { //load espera a que el JS y los ar
 }*/
 
 window.onload = function () {
-    console.log(3);
+    //console.log(3);
 };
 
 document.addEventListener('DOMContentLoaded', function() { // Solo espera por el HTML, pero no espera CSS o imagenes
-    console.log(4);
+    //console.log(4);
 });
 
-console.log(5);
+//console.log(5);
 
 /*window.onscroll = function() {
     console.log('scrolling...');
@@ -81,12 +82,48 @@ console.log(5);
 const btnEnviar = document.querySelector('.boton--primario');
 
 btnEnviar.addEventListener('click', function(event) {
-    console.log(event);
+    //console.log(event);
     event.preventDefault(); //Prevenimos la accion de este caso enviar el formulario
 
     //Validar un formulario
 
 
-    
-    console.log('enviado formulario');
+
+   // console.log('enviado formulario');
 });
+
+// Eventos de los Inputs y Textarea
+
+const datos = {
+    nombre: '',
+    email: '',
+    mensaje: ''
+}
+
+const nombreInput = document.querySelector('#nombre');
+const emailInput = document.querySelector('#email');
+const mensajeInput = document.querySelector('#mensaje');
+
+/*nombreInput.addEventListener('input', function(event) {
+    console.log(event.target.value);
+});
+
+emailInput.addEventListener('input', function(event) {
+    console.log(event.target.value);
+});
+
+mensajeInput.addEventListener('input', function(event) {
+    console.log(event.target.value);
+});*/
+
+nombreInput.addEventListener('input', leerTexto);
+emailInput.addEventListener('input', leerTexto);
+mensajeInput.addEventListener('input', leerTexto);
+
+function leerTexto(event) {
+    console.log(event.target.value);
+
+    datos[event.target.id] = event.target.value;
+
+    console.log(datos);
+}
