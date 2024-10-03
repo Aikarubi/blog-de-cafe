@@ -103,6 +103,7 @@ const datos = {
 const nombreInput = document.querySelector('#nombre');
 const emailInput = document.querySelector('#email');
 const mensajeInput = document.querySelector('#mensaje');
+const formulario = document.querySelector('.formulario');
 
 /*nombreInput.addEventListener('input', function(event) {
     console.log(event.target.value);
@@ -119,6 +120,15 @@ mensajeInput.addEventListener('input', function(event) {
 nombreInput.addEventListener('input', leerTexto);
 emailInput.addEventListener('input', leerTexto);
 mensajeInput.addEventListener('input', leerTexto);
+
+// El Evento de Submit
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    // Validar el formulario
+
+    // Enviar el formulario
+});
 
 function leerTexto(event) {
     console.log(event.target.value);
