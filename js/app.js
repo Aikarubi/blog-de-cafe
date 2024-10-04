@@ -127,6 +127,16 @@ formulario.addEventListener('submit', function(event) {
 
     // Validar el formulario
 
+    const { nombre, email, mensaje } = datos;
+
+    if(nombre === '' || email === '' || mensaje === '') {
+        mostrarError('Todos los campos son obligatorios');
+        return;
+    } 
+
+    // Aprobar el envio del formulario
+    mostrarAprobacion('Formulario Enviado Correctamente');
+
     // Enviar el formulario
 
     console.log('Formulario Enviado');
@@ -138,4 +148,32 @@ function leerTexto(event) {
     datos[event.target.id] = event.target.value;
 
     console.log(datos);
+}
+
+// Muestra un error en pantalla
+function mostrarError(mensaje) {
+    const error = document.createElement('P');
+    error.textContent = mensaje;
+    error.classList.add('error');
+
+    formulario.appendChild(error);
+
+    //Elimina el error una vez que aparece
+    setTimeout(() => {
+        error.remove();
+    }, 5000);
+}
+
+// Muestra un Aprobacion en pantalla
+function mostrarAprobacion(mensaje) {
+    const aprobacion = document.createElement('P');
+    aprobacion.textContent = mensaje;
+    aprobacion.classList.add('aprobacion');
+
+    formulario.appendChild(aprobacion);
+
+    //Elimina la aprobacion una vez que aparece
+    setTimeout(() => {
+        aprobacion.remove();
+    }, 5000);
 }

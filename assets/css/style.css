@@ -313,3 +313,25 @@ img { max-width: 100%; }
     user-select: none;
     width: 30rem;
 }
+
+.error {
+    background-color: rgb(185, 0, 0);
+    color: var(--blanco);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.aprobacion {
+    background-color: rgb(0, 128, 0);
+    color: var(--blanco);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
