@@ -130,17 +130,20 @@ formulario.addEventListener('submit', function(event) {
     const { nombre, email, mensaje } = datos;
 
     if(nombre === '' || email === '' || mensaje === '') {
-        mostrarError('Todos los campos son obligatorios');
+        mostrarAlerta('Todos los campos son obligatorios', true);
         return;
     } 
 
     // Aprobar el envio del formulario
-    mostrarAprobacion('Formulario Enviado Correctamente');
+    mostrarAlerta('Formulario Enviado Correctamente');
 
     // Enviar el formulario
 
     console.log('Formulario Enviado');
 });
+
+
+//FUNCIONES
 
 function leerTexto(event) {
     console.log(event.target.value);
@@ -150,8 +153,26 @@ function leerTexto(event) {
     console.log(datos);
 }
 
+
+function mostrarAlerta(mensaje, error = null) { //Asi refactorizamos las dos funciones de los dos errores y lo optimizamos a una
+    const alerta = document.createElement('P');
+    alerta.textContent = mensaje;
+
+    if(error) {
+        alerta.classList.add('error');
+    } else {
+        alerta.classList.add('aprobacion');
+    }
+
+    formulario.appendChild(alerta);
+
+    setTimeout(() => {
+        alerta.remove();
+    }, 5000);
+}
+
 // Muestra un error en pantalla
-function mostrarError(mensaje) {
+/*function mostrarError(mensaje) {
     const error = document.createElement('P');
     error.textContent = mensaje;
     error.classList.add('error');
@@ -162,10 +183,10 @@ function mostrarError(mensaje) {
     setTimeout(() => {
         error.remove();
     }, 5000);
-}
+}*/
 
 // Muestra un Aprobacion en pantalla
-function mostrarAprobacion(mensaje) {
+/*function mostrarAprobacion(mensaje) {
     const aprobacion = document.createElement('P');
     aprobacion.textContent = mensaje;
     aprobacion.classList.add('aprobacion');
@@ -176,4 +197,4 @@ function mostrarAprobacion(mensaje) {
     setTimeout(() => {
         aprobacion.remove();
     }, 5000);
-}
+}*/
