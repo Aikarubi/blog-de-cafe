@@ -311,4 +311,5 @@ img { max-width: 100%; }
     margin: 0 auto;
     font-size: 2rem;
     user-select: none;
+    width: 30rem;
 }

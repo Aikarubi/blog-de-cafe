@@ -83,7 +83,7 @@ const btnEnviar = document.querySelector('.boton--primario');
 
 btnEnviar.addEventListener('click', function(event) {
     //console.log(event);
-    event.preventDefault(); //Prevenimos la accion de este caso enviar el formulario
+    //event.preventDefault(); //Prevenimos la accion de este caso enviar el formulario
 
     //Validar un formulario
 
@@ -128,6 +128,8 @@ formulario.addEventListener('submit', function(event) {
     // Validar el formulario
 
     // Enviar el formulario
+
+    console.log('Formulario Enviado');
 });
 
 function leerTexto(event) {
